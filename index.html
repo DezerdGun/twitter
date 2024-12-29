@@ -14,31 +14,32 @@
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
 
-    <!-- Twitter Card мета-теги --> 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@dezerddgun" />
-    <meta name="twitter:title" content="Пример с изображением" />
-    <meta name="twitter:description" content="Тест отображения изображения в OpenGraph и Twitter" />
-    <meta name="twitter:image" content="https://dezerddgun.github.io/twitter/1.jpg" />
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const img = new Image();
-            img.src = "https://dezerddgun.github.io/twitter/1.jpg";
-            img.onload = function () {
-                document.body.innerHTML = `
-                    <h1>Изображение загружено успешно</h1>
-                    <img src="${img.src}" alt="Пример изображения" style="max-width:100%; border-radius:10px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
-                `;
-            };
-            img.onerror = function () {
-                document.body.innerHTML = `
-                    <h1>Ошибка: изображение недоступно</h1>
-                    <p>Проверьте, правильно ли указан URL изображения или доступен ли файл.</p>
-                `;
-            };
-        });
-    </script>
+    <head>
+        <!-- OpenGraph мета-теги -->
+        <meta property="og:title" content="Title" />
+        <meta property="og:description" content="Test Description" />
+        <meta property="og:image" content="https://dezerddgun.github.io/twitter/1.jpg" />
+        <meta property="og:image:width" content="300" />
+        <meta property="og:image:height" content="300" />
+        <meta property="og:type" content="video" />
+        <meta property="og:url" content="https://dezerddgun.github.io/twitter" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:site_name" content="My Tester Twitter" />
+    
+        <!-- Twitter Card мета-теги -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@DezerdGun" />
+        <meta name="twitter:title" content="Title" />
+        <meta name="twitter:description" content="Test Description" />
+        <meta name="twitter:image" content="https://dezerddgun.github.io/twitter/1.jpg" />
+        <meta name="twitter:image:alt" content="Image description" />
+        <meta name="twitter:creator" content="Tester" />
+        <meta name="twitter:location" content="Uzbekistan Tashkent" />
+        <meta name="twitter:date" content="2024-10-24" />
+        <meta name="twitter:label1" content="Reading time" />
+        <meta name="twitter:data1" content="9 mins read" />
+    </head>
+    
 </head>
 <body>
     <h1>Загрузка изображения...</h1>
