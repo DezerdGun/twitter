@@ -3,30 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Пример OpenGraph</title>
+    <title>Впечатляющий пример для Twitter</title>
 
     <!-- OpenGraph мета-теги -->
-    <!-- <meta property="og:title" content="Удивительный контент" /> -->
-    <meta property="og:description" content="Превью будет видно как изображение экрана, без текста." />
-    <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Экран" />
-    <!-- <meta property="og:url" content="https://dezerddgun.github.io/twitter/" /> -->
+    <meta property="og:title" content="Красивый шаблон для Twitter" />
+    <meta property="og:description" content="Этот шаблон создан для отображения длинного и красивого дизайна в социальных сетях." />
+    <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Красивая+картинка" />
+    <meta property="og:url" content="https://dezerddgun.github.io/twitter/" />
     <meta property="og:type" content="website" />
 
-    <!-- Стиль для скрытия текста и прочего -->
+    <!-- Twitter Card мета-теги -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Красивый шаблон для Twitter" />
+    <meta name="twitter:description" content="Этот шаблон создан для отображения длинного и красивого дизайна в социальных сетях." />
+    <meta name="twitter:image" content="https://via.placeholder.com/1200x630.png?text=Красивая+картинка" />
+
+    <!-- Стили для демонстрации дизайна -->
     <style>
-        body {
+        * {
             margin: 0;
             padding: 0;
-            overflow: hidden;
+            box-sizing: border-box;
         }
-        img {
-            width: 100%;
-            height: 100vh;
-            object-fit: cover;
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(120deg, #84fab0, #8fd3f4);
+            color: #333;
+        }
+        .container {
+            text-align: center;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+        }
+        .container img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .container h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        .container p {
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #555;
         }
     </style>
 </head>
 <body>
-    <img src="https://via.placeholder.com/1200x630.png?text=Экран" alt="Экран" />
+    <div class="container">
+        <img src="https://via.placeholder.com/1200x630.png?text=Красивая+картинка" alt="Пример изображения">
+        <h1>Красивый шаблон для Twitter</h1>
+        <p>Этот шаблон создан для демонстрации длинного и элегантного дизайна, который будет привлекательно выглядеть в социальных сетях.</p>
+    </div>
 </body>
 </html>
