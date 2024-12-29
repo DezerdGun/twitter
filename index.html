@@ -20,8 +20,27 @@
     <meta name="twitter:title" content="Пример с изображением" />
     <meta name="twitter:description" content="Тест отображения изображения в OpenGraph и Twitter" />
     <meta name="twitter:image" content="https://dezerddgun.github.io/twitter/1.jpg" />
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const img = new Image();
+            img.src = "https://dezerddgun.github.io/twitter/1.jpg";
+            img.onload = function () {
+                document.body.innerHTML = `
+                    <h1>Изображение загружено успешно</h1>
+                    <img src="${img.src}" alt="Пример изображения" style="max-width:100%; border-radius:10px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+                `;
+            };
+            img.onerror = function () {
+                document.body.innerHTML = `
+                    <h1>Ошибка: изображение недоступно</h1>
+                    <p>Проверьте, правильно ли указан URL изображения или доступен ли файл.</p>
+                `;
+            };
+        });
+    </script>
 </head>
 <body>
-    <h1>Проверьте предпросмотр ссылки</h1>
+    <h1>Загрузка изображения...</h1>
 </body>
 </html>
